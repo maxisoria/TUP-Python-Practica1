@@ -10,7 +10,12 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
-
+Cliente =   {
+                "Nombre": "Mario Pedernera",
+                "DNI": 56895632,
+                "Domicilio": "Los alamos 4509",
+                "Compras" : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+            }
 # COMPLETAR - FIN
 
 assert (
@@ -18,7 +23,7 @@ assert (
     and (Cliente["DNI"] == 56895632)
     and (Cliente["Domicilio"] == "Los alamos 4509")
     and (Cliente["Compras"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
-)
+    )
 
 
 """
@@ -29,11 +34,15 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+Compras = {
+            "Mario Pedernera": ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+            "Ezequiel Castello" : ["ipad", "ipod", "iphone"],
+            "Pablo Piristrelli" : ["Reproductor de CD", "Videograbadora"],
+          }
+# COMPLETAR - FIN  
 
 assert (
-    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
+    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
     and (Compras["Ezequiel Castello"] == ["ipad", "ipod", "iphone"])
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
@@ -44,15 +53,15 @@ Dado el siguiente diccionario obtener el valor de la "clave1" utilizando el meto
 guardarlo en la variable clave1
 """
 
-diccionario = {
-    "clave1": 234,
-    "clave2": True,
-    "clave3": "Valor 1",
-    "clave4": [1, 2, 3, 4],
-}
+diccionario =   {
+                    "clave1": 234,
+                    "clave2": True,
+                    "clave3": "Valor 1",
+                    "clave4": [1, 2, 3, 4],
+                }
 
 # COMPLETAR - INICIO
-
+clave1= diccionario.get("clave1")
 # COMPLETAR - FIN
 
 assert clave1 == 234
